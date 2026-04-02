@@ -1,4 +1,4 @@
-# Finance Data Processing and Access Control Backend
+# Finance Management Backend
 
 This is a complete backend system built for a finance dashboard application. It provides user management, record management, dashboard summaries, and role-based access control.
 
@@ -10,36 +10,20 @@ This is a complete backend system built for a finance dashboard application. It 
 - **Bcrypt**: Password hashing.
 - **Joi**: Input Validation.
 
-## Features & Access Control Logic
-- **Viewer**: Can only access the Dashboard summary data.
-- **Analyst**: Can view Dashboard summaries and read Finance Records (with filtering).
-- **Admin**: Has full access. Can manage users (roles, status), and manage all finance records (Create, Update, Delete).
-
 ## Installation & Setup
 
 1. **Install Dependencies**
-   \`\`\`bash
    npm install
-   \`\`\`
 
 2. **Environment Variables**
-   The project has a default `.env` file set up:
-   \`\`\`
    PORT=3000
    JWT_SECRET=supersecret_finance_assessment_key_2026
    JWT_EXPIRES_IN=24h
-   \`\`\`
+   MONGO_URI = mongodb://127.0.0.1:27017/finance_control_system
 
-3. **Start the Server**
-   \`\`\`bash
+4. **Start the Server**
    npm start
-   \`\`\`
-   *(For development mode with auto-reload, run `npm run dev`)*
 
-4. **Initial Setup (Auto-seeded Accounts)**
-   When the database initializes, default accounts are created if they don't exist:
-   - **Admin:** `admin@gmail.com` / `Admin123!`
-   - **Analyzer:** `analyzer@gmail.com` / `Analyzer123!`
 
 ## API Documentation
 
@@ -78,9 +62,3 @@ This is a complete backend system built for a finance dashboard application. It 
   - **Monthly Trends**: Income vs Expense breakdown for the last 6 months.
   - **Recent Activity**: The 5 most recent transactions.
 
-## Project Structure Overview
-- `/src/config/db.js`: Initializes MongoDB connection using Mongoose.
-- `/src/middlewares`: Contains `auth.middleware` for JWT validation, `role.middleware` for access control checks, and `error.middleware` for generic error boundary mappings.
-- `/src/routes/`: Router modularization cleanly grouped by feature.
-- `/src/controllers/`: Core business logic, queries, and validation schemas per feature limits.
-# finance-management-backend
