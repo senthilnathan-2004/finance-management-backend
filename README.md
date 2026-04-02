@@ -5,7 +5,6 @@ This is a complete backend system built for a finance dashboard application. It 
 ## Tech Stack
 - **Node.js & Express**: API Framework
 - **MongoDB & Mongoose**: NoSQL database and ODM for robust data modeling.
-- **Security**: Helmet, Express-Rate-Limit, HPP, XSS-Clean, and Mongo-Sanitize.
 - **JWT (`jsonwebtoken`)**: Authentication and Authorization.
 - **Bcrypt**: Password hashing.
 - **Joi**: Input Validation.
