@@ -11,8 +11,8 @@ This is a complete backend system built for a finance dashboard application. It 
 
 ## Installation & Setup
 
-1. **Install Dependencies**
-   npm install
+1. **Install Dependencies** - 
+   " npm install "
 
 2. **Environment Variables**
    PORT=3000
@@ -20,8 +20,8 @@ This is a complete backend system built for a finance dashboard application. It 
    JWT_EXPIRES_IN=24h
    MONGO_URI = mongodb://127.0.0.1:27017/finance_control_system
 
-4. **Start the Server**
-   npm start
+4. **Start the Server** - 
+   " npm start "
 
 
 ## API Documentation
