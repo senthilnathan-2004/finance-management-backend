@@ -17,11 +17,10 @@ This is a complete backend system built for a finance dashboard application. It 
    \`\`\`
 
 2. **Environment Variables**
-   add .env file 
    \`\`\`
-   PORT=3000
-   JWT_SECRET=supersecret_finance_assessment_key_2026
-   JWT_EXPIRES_IN=24h
+   PORT=3000 , 
+   JWT_SECRET=supersecret_finance_assessment_key_2026 , 
+   JWT_EXPIRES_IN=24h ,
    \`\`\`
 
 4. **Start the Server**
