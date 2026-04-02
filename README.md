@@ -18,9 +18,10 @@ This is a complete backend system built for a finance dashboard application. It 
 
 2. **Environment Variables**
    \`\`\`
-   PORT=3000 , 
-   JWT_SECRET=supersecret_finance_assessment_key_2026 , 
-   JWT_EXPIRES_IN=24h ,
+   PORT = 3000 , 
+   JWT_SECRET = ghf6876sdsdas26721fsfas26762sgfas27627 , 
+   JWT_EXPIRES_IN = 24h ,
+   MONGO_URI = mongodb://127.0.0.1:27017/finance_assessment .
    \`\`\`
 
 4. **Start the Server**
